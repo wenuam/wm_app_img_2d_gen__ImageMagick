@@ -1,4 +1,4 @@
-[ ImageMagick 7.1.2-5 (2025-10-06) ]
+[ ImageMagick 7.1.2-7 (2025-10-14) ]
 
 ImageMagick License
              https://imagemagick.org/script/license.php
@@ -2071,7 +2071,7 @@ Redistribution and use in source and binary forms, with or without modification,
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-[ 2025-08-02 3.5.2 (libffi) ]
+[ libffi 3.5.2 (2025-08-02) ]
 
 libffi - Copyright (c) 1996-2025  Anthony Green, Red Hat, Inc and others.
 See source files for details.
@@ -2298,7 +2298,7 @@ fontconfig/src/ftglue.[ch]
  * PS: This "glue" code is explicitely put in the public domain
  */
 
-[ freetype 2.13.3 (2024-08-12) ]
+[ freetype 2.14.1 (2024-09-11) ]
 
 The FreeType Project LICENSE
                     ----------------------------
@@ -2351,7 +2351,7 @@ Introduction
 
    """
     Portions of this software are copyright © <year> The FreeType
-    Project (www.freetype.org).  All rights reserved.
+    Project (https://freetype.org).  All rights reserved.
    """
 
   Please replace <year> with the value from the FreeType version you
@@ -2465,7 +2465,7 @@ Legal Terms
 
   Our home page can be found at
 
-    https://www.freetype.org
+    https://freetype.org
 
 
 --- end of FTL.TXT ---
@@ -2975,7 +2975,7 @@ necessary.  Here is a sample; alter the names:
 
 That's all there is to it!
 
-[ gdk-pixbuf 2.43.5 (2025-08-26) ]
+[ gdk-pixbuf 2.44.3 (2025-09-30) ]
 
 GNU LESSER GENERAL PUBLIC LICENSE
                        Version 2.1, February 1999
@@ -3985,7 +3985,7 @@ necessary.  Here is a sample; alter the names:
 
 That's all there is to it!
 
-[ harfbuzz 11.5.0 (2025-09-22) ]
+[ harfbuzz 12.1.0 (2025-10-01) ]
 
 HarfBuzz is licensed under the so-called "Old MIT" license.  Details follow.
 For parts of HarfBuzz that are licensed under different licenses see individual
@@ -6014,7 +6014,7 @@ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-[ openjpeg 2.5.3 (2024-12-09) ]
+[ openjpeg 2.5.4 (2025-09-20) ]
 
 /*
  * The copyright in this software is being made available under the 2-clauses 
@@ -7694,7 +7694,7 @@ necessary.  Here is a sample; alter the names:
 
 That's all there is to it!
 
-[ libtiff 4.7.0 (2024-09-11) ]
+[ libtiff 4.7.1 (2025-09-12) ]
 
 # LibTIFF license
 
@@ -7719,6 +7719,32 @@ OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
 WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF 
 LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE 
 OF THIS SOFTWARE.
+
+# Lempel-Ziv & Welch Compression (tif_lzw.c) license
+The code of tif_lzw.c is derived from the compress program whose code is
+derived from software contributed to Berkeley by James A. Woods,
+derived from original work by Spencer Thomas and Joseph Orost.
+
+The original Berkeley copyright notice appears below in its entirety:
+
+Copyright (c) 1985, 1986 The Regents of the University of California.
+All rights reserved.
+
+This code is derived from software contributed to Berkeley by
+James A. Woods, derived from original work by Spencer Thomas
+and Joseph Orost.
+
+Redistribution and use in source and binary forms are permitted
+provided that the above copyright notice and this paragraph are
+duplicated in all such forms and that any documentation,
+advertising materials, and other materials related to such
+distribution and use acknowledge that the software was developed
+by the University of California, Berkeley.  The name of the
+University may not be used to endorse or promote products derived
+from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
 [ libwebp 1.6.0 (2025-07-09) ]
 
@@ -7752,7 +7778,7 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-[ libxml2 2.14.5 (2025-07-10) ]
+[ libxml2 2.15.0 (2025-09-15) ]
 
 Except where otherwise noted in the source code (e.g. the files dict.c and
 list.c, which are covered by a similar licence but with different Copyright
