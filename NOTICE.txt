@@ -1,6 +1,6 @@
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
-[ Imagemagick 7.1.1-30] copyright:
+[ Imagemagick 7.1.1-31] copyright:
 
 ImageMagick License
              https://imagemagick.org/script/license.php
