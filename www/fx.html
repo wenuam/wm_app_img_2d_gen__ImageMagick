@@ -22,16 +22,53 @@
   <meta name="copyright" content="Copyright (c) 1999-2017 ImageMagick Studio LLC" />
   <meta name="distribution" content="Global" />
   <meta name="magick-serial" content="P131-S030410-R485315270133-P82224-A6668-G1245-1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="google-site-verification" content="_bMOCDpkx9ZAzBwb2kF3PRHbfUUdFj2uO8Jd1AXArz4" />
-  <link href="https://www.imagemagick.org/script/fx.html" rel="canonical" />
+  <link href="../www/fx.html" rel="canonical" />
   <link href="../images/wand.png" rel="icon" />
   <link href="../images/wand.ico" rel="shortcut icon" />
-  <link href="css/magick.css" rel="stylesheet" />
+  <link href="assets/magick.css" rel="stylesheet" />
 </head>
 <body>
-<div class="magick-masthead">
+  <header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="../index.html"><img class="d-block" id="logo" name="ImageMagick" alt="ImageMagick" width="32" height="32" src="../images/wand.ico"/></a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navbarsExampleDefault" style="">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="download.html">Download</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="command-line-tools.html">Tools</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="command-line-processing.html">Command-line</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="resources.html">Resources</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="develop.html">Develop</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="https://www.imagemagick.org/discourse-server/">Community</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" action="https://www.imagemagick.org/script/search.php">
+      <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="sa">Search</button>
+    </form>
+    </div>
+  </nav>
   <div class="container">
-    <script async="async" src="http://localhost/pagead/js/adsbygoogle.js"></script>    <ins class="adsbygoogle"
+   <script async="async" src="http://localhost/pagead/js/adsbygoogle.js"></script>    <ins class="adsbygoogle"
          style="display:block"
          data-ad-client="ca-pub-3129977114552745"
          data-ad-slot="6345125851"
@@ -39,23 +76,14 @@
     <script>
       (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-    <nav class="nav magick-nav">
-      <a class="nav-link " href="../index.html">Home</a>
-      <a class="nav-link " href="download.html">Download</a>
-      <a class="nav-link " href="command-line-tools.html">Tools</a>
-      <a class="nav-link " href="command-line-processing.html">Command-line</a>
-      <a class="nav-link " href="resources.html">Resources</a>
-      <a class="nav-link " href="develop.html">Develop</a>
-      <a class="nav-link " href="https://www.imagemagick.org/script/search.php">Search</a>
-      <a class="nav-link float-right" href="https://www.imagemagick.org/discourse-server/">Community</a>
-    </nav>
   </div>
-</div>
-<div class="container">
+  </header>
+  <main role="main" class="container">
+    <div class="magick-template">
 <div class="magick-header">
 <p class="text-center"><a href="fx.html#fx">The Fx Special Effects Image Operator</a> • <a href="fx.html#anatomy">The Anatomy of an Fx Expression</a></p>
 
-<a id="fx"></a>
+<a class="anchor" id="fx"></a>
 
 <p class="lead magick-description">Use the Fx special effects image operator to apply a mathematical expression to an image or image channels.  Use Fx to:</p>
 
@@ -117,11 +145,11 @@
   channel(4.28,3.86,6.68,0)/255; max(0,p+pnoise)\' noisy.png
 </code></pre>
 
-<p>See <a href="https://www.imagemagick.org/Usage/transform/index.html#fx">Using FX, The Special Effects Image Operator</a> for more examples.</p>
+<p>See <a href="../Usage/transform/index.html#fx">Using FX, The Special Effects Image Operator</a> for more examples.</p>
 
 <p>The next section discusses the Fx expression language.</p>
 
-<h2 class="magick-post-title"><a id="anatomy"></a>The Anatomy of an Fx Expression</h2>
+<h2 class="magick-post-title"><a class="anchor" id="anatomy"></a>The Anatomy of an Fx Expression</h2>
 
 <h3>The Fx Expression Language</h3>
 
@@ -228,7 +256,7 @@
 <dt class="col-md-4"> <code>+</code><var>x</var></dt><dd class="col-md-8"> unary plus, return 1.0*value</dd>
 <dt class="col-md-4"> <code>-</code><var>x</var></dt><dd class="col-md-8"> unary minus, return -1.0*value</dd>
 <dt class="col-md-4"> <var>x</var> <code>?</code> <var>y</var> <code>:</code> <var>z</var> </dt><dd class="col-md-8">ternary conditional expression, return value <var>y</var> if <var>x</var> != 0, otherwise <var>z</var>; only one ternary conditional permitted per statement</dd>
-<dt class="col-md-4"> <var>x</var> <code>=</code> <var>y</var></dt><dd class="col-md-8">assignment; assignment variables are restricted to letter combinations only (e.g. Xi not X1)</dd>
+<dt class="col-md-4"> <var>x</var> <code>=</code> <var>y</var></dt><dd class="col-md-8">assignment; variables must be at least 2 characters, letter combinations only (e.g. Xi not X1)</dd>
 <dt class="col-md-4"> <var>x</var> <code>;</code> <var>y</var></dt><dd class="col-md-8">statement separator </dd>
 <dt class="col-md-4"> <code>phi</code></dt><dd class="col-md-8"> constant (1.618034...)</dd>
 <dt class="col-md-4"> <code>pi</code></dt><dd class="col-md-8"> constant (3.14159265359...)</dd>
@@ -386,23 +414,26 @@ Red channel of NW corner of image #1 is 0.184588
 <p>The color-escape <code>%[pixel:]</code> or <code>%[hex:]</code> is evaluated once per image and per color channel in that image (<a href="command-line-options.html#channel">-channel</a> is ignored), The values generated are then converted into a color string (a named color or hex color value).  The symbols <code>i</code> and <code>j</code> are set to zero, and <code>s</code> and <code>t</code> refer to each successively current image and index.</p>
 
 </div>
+    </div>
+  </main><!-- /.container -->
   <footer class="magick-footer">
-    <p><a href="support.html">Donate</a> •
-     <a href="sitemap.html">Sitemap</a> •
+    <p><a href="security-policy.html">Security</a> •
+    <a href="architecture.html">Architecture</a> •
     <a href="links.html">Related</a> •
-    <a href="security-policy.html">Security</a> •
-    <a href="architecture.html">Architecture</a>
-</p>
-    <p><a href="fx.html#">Back to top</a> •
-    <a href="http://pgp.mit.edu:11371/pks/lookup?op=get&amp;search=0x89AB63D48277377A">Public Key</a> •
-    <a href="https://www.imagemagick.org/script/contact.php">Contact Us</a></p>
-        <p><small>© 1999-2017 ImageMagick Studio LLC</small></p>
+     <a href="sitemap.html">Sitemap</a>
+       
+    <a href="fx.html#"><img class="d-inline" id="logo" alt="And Now a Touch of Magick" width="16" height="16" src="../images/wand.ico"/></a>
+       
+    <a href="http://pgp.mit.edu/pks/lookup?op=get&amp;search=0x89AB63D48277377A">Public Key</a> •
+    <a href="support.html">Donate</a> •
+    <a href="https://www.imagemagick.org/script/contact.php">Contact Us</a>
+    <br/>
+        <small>© 1999-2018 ImageMagick Studio LLC</small></p>
   </footer>
-</div><!-- /.container -->
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  <script src="../js/magick.html"></script>
+  <!-- Javascript assets -->
+  <script src="assets/magick.js" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="assets/jquery.min.js"><\/script>')</script>
 </body>
 </html>
-<!-- Magick Cache 8th October 2017 11:16 -->
+<!-- Magick Cache 18th February 2018 13:16 -->
